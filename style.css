@@ -6,8 +6,8 @@
 
 :root {
     /* colors */
-    --primary-color: #2E323F;
-    --secondary-color: #3B4050;
+    --primary-color: #3B4050;
+    --secondary-color: #2E323F;
     --light-gray: #6F737F;
     --white: #FFFFFF;
     --light-brown: #A59678;
@@ -32,7 +32,7 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: var(--regular-font);
-
+    line-height: 1.8;
 }
 
 h1,
@@ -51,6 +51,152 @@ img {
     max-width: 100%;
 }
 
+header {
+    background-color: var(--secondary-color);
+    padding: 1em 0;
+    text-align: center;
+}
+
+.nav {
+    width: 100%;
+}
+
+.nav-toggle {
+    cursor: pointer;
+    border: 0;
+    width: 3em;
+    height: 3em;
+    padding: 0em;
+    border-radius: 50%;
+    background: #24252b;
+    color: white;
+    transition: opacity 250ms ease;
+    
+    position: absolute;
+    left: 0;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+    opacity: .75;
+}
+
+.hamburger {
+    width: 50%;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+.nav {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+    font-size: 1rem;
+}
+
+.nav__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item {
+    margin-top: .75em;
+}
+
+.nav__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+    opacity: .7;
+}
+
+.nav__link--button {
+    padding: .25em .75em;
+    background-color: white;
+    color: #072A2D;
+    border-radius: 100px;
+}
+
+.nav__list--primary {
+    margin-bottom: 2em;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+} 
+
+
 .logo {
     height: 30px;
 }
+
+ul {
+    margin: 0;
+}
+.logo {
+    height: 30px;
+}
+
+.hero {
+    padding: 100px 0;
+    color: var(--white);
+    background-color: var(--primary-color);
+}
+
+.hero__title {
+    font-size: clamp(3.4rem, 10vw, 5rem);;
+    margin-top: 0;
+    line-height: 1.1;
+
+}
+
+.hero__subtitle {
+    color: var(--light-brown);
+}
+
+.hero__description {
+    margin-top: 2em;
+}
+
+.btn {
+    margin-top: 2em;
+    font-family: 'Oswald', sans-serif; 
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--white);
+    background-color: var(--light-brown);
+    padding: .75em 2em;
+    border-radius: 100px;
+}
+
