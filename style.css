@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    /* colors */
+    --primary-color: #2E323F;
+    --secondary-color: #3B4050;
+    --light-gray: #6F737F;
+    --white: #FFFFFF;
+    --light-brown: #A59678;
+
+    /* font sizes */
+    --very-small-font: 1rem;
+    --small-font: 1.125rem;
+    --regular-font: 1.3125rem;
+    --slightly-large-font: 1.5rem;
+    --large-font: 1.875rem;
+    --very-large-font: 2.25rem;
+    --very-very-large-font: 5.625rem;
+
+}
+
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif; 
+*/
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--regular-font);
+
+}
+
+h1,
+h2 {
+    font-family: 'Oswald', sans-serif; 
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo {
+    height: 30px;
+}
