@@ -36,8 +36,10 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: 'Oswald', sans-serif; 
+    margin: 0;
 }
 
 .container {
@@ -123,10 +125,11 @@ header {
 }
 
 .nav__item {
-    margin-top: .75em;
+    margin-top: .4em;
 }
 
 .nav__link {
+    font-family: 'Oswald', sans-serif; 
     text-transform: uppercase;
     text-decoration: none;
     color: white;
@@ -145,7 +148,7 @@ header {
 }
 
 .nav__list--primary {
-    margin-bottom: 2em;
+    margin-bottom: 1.6em;
 }
 
 .nav--visible {
@@ -167,9 +170,15 @@ ul {
 }
 
 .hero {
-    padding: 100px 0;
+    padding: 6.5em 0;
     color: var(--white);
     background-color: var(--primary-color);
+}
+
+.first__section,
+.second__section,
+.third__section {
+    padding: 4.375em 0;
 }
 
 .hero__title {
@@ -200,3 +209,106 @@ ul {
     border-radius: 100px;
 }
 
+.btn:hover,
+.btn:focus {
+    opacity: .75;
+}
+
+.first__section {
+    background-color: rgb(241, 236, 236);
+    text-align: center;
+
+}
+
+.first__section--card + .first__section--card {
+    margin-top: 1.9em;
+}
+
+.section__title {
+    margin-bottom: .4em;
+    line-height: 1;
+    font-size: var(--large-font);
+    color: var(--light-brown);
+}
+
+.first-section-content {
+    margin: .1em 0 0 0;
+    font-size: var(--small-font);
+}
+
+.second__section-title {
+    margin-bottom: .5em;
+    line-height: 1;
+    font-size: var(--very-large-font);
+}
+
+.second__section--left > p {
+    margin: 0;
+}
+
+.second__section--img {
+    margin-bottom: 1.5em;
+    width: 100%;
+    max-width: 600px;
+}
+
+.sidebar {
+    padding-top: 3.125rem;
+}
+
+.sidebar__card {
+    max-width: 400px;
+    padding: 2em;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--primary-color);
+}
+
+.sidebar__card + .sidebar__card {
+    margin-top: 1.5em;
+}
+
+.sidebar__title {
+    line-height: 1;
+    margin-bottom: .5em;
+    font-size: var(--large-font);
+}
+
+.sidebar__content {
+    margin: 0;
+    font-size: var(--small-font);
+}
+
+.third__section {
+    color: var(--white);
+    background-color: var(--primary-color);
+}
+
+.third__section--title {
+    line-height: 1;
+    font-size: var(--very-large-font);
+}
+
+.third__section-content {
+    padding: 50px 0;
+}
+
+.third__section--sub-title {
+    line-height: 1;
+    margin-bottom: .8em;
+    color: var(--light-brown);
+    font-size: var(--regular-font);
+}
+
+.third__section--content {
+    margin: 0;
+    font-size: var(--very-small-font);
+}
+
+.third__section--left {
+    margin-bottom: 2em;
+}
+
+.third__sectoin--card + .third__sectoin--card {
+    margin-top: 2em;
+}
