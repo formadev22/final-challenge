@@ -200,12 +200,14 @@ ul {
     margin-top: 2em;
     font-family: 'Oswald', sans-serif; 
     display: inline-block;
+    line-height: 1;
+    overflow: hidden;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 900;
     color: var(--white);
     background-color: var(--light-brown);
-    padding: .75em 2em;
+    padding: .7em 1.5em;
     border-radius: 100px;
 }
 
@@ -218,6 +220,12 @@ ul {
     background-color: rgb(241, 236, 236);
     text-align: center;
 
+}
+
+.first__section--card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .first__section--card + .first__section--card {
@@ -257,6 +265,7 @@ ul {
 }
 
 .sidebar__card {
+    margin: 0 auto;
     max-width: 400px;
     padding: 2em;
     text-align: center;
@@ -282,10 +291,12 @@ ul {
 .third__section {
     color: var(--white);
     background-color: var(--primary-color);
+
 }
 
 .third__section--title {
     line-height: 1;
+    text-align: center;
     font-size: var(--very-large-font);
 }
 
@@ -303,12 +314,103 @@ ul {
 .third__section--content {
     margin: 0;
     font-size: var(--very-small-font);
+    /* margin: 0 auto; */
 }
 
 .third__section--left {
     margin-bottom: 2em;
+    max-width: 600px;
+}
+
+.third__section--right {
+    display: flex;
+    justify-content: space-between;
 }
 
 .third__sectoin--card + .third__sectoin--card {
-    margin-top: 2em;
+    margin-left: 2em;
+}
+
+/* Tablet size */ 
+
+@media (min-width: 700px) {
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav {
+        visibility: visible;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: auto;
+        position: relative;
+    }
+
+    .nav__list {
+        display: flex;
+        margin: 0;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+    }
+
+    .nav__item{
+        margin: 0 0 0 1.9em;
+    }
+
+    .nav__list--secondary {
+        margin-left: 3em;
+    }
+
+    .hero__left {
+        width: 62%;
+        align-self: flex-start;
+    }
+
+    .hero__right {
+        width: 32%;
+        align-self: flex-end;
+        margin: 0;
+    }
+
+    .hero__description {
+        /* padding-top: .5em; */
+        margin: 0 0 1em 0;
+    }
+
+    .btn {
+        margin: 0;
+    }
+
+    .col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .second__section--img {
+        max-width: 100%;
+        height: 250px;
+        object-fit: cover;
+        margin: 2.5em 0 1.5em 0;
+    }
+
+    .sidebar__card {
+        width: 30%;
+    }
+
+    .sidebar__card + .sidebar__card {
+        margin-top: 0;
+    }
+
+
+
+    .third__section--right {
+        width: 100%;
+        max-width: 600px;
+    }
 }
