@@ -245,6 +245,7 @@ ul {
 }
 
 .second__section-title {
+    text-align: left;
     margin-bottom: .5em;
     line-height: 1;
     font-size: var(--very-large-font);
@@ -301,7 +302,7 @@ ul {
 }
 
 .third__section-content {
-    padding: 50px 0;
+    padding: 50px 0 0 0;
 }
 
 .third__section--sub-title {
@@ -367,12 +368,12 @@ ul {
     }
 
     .hero__left {
-        width: 62%;
+        width: 60%;
         align-self: flex-start;
     }
 
     .hero__right {
-        width: 32%;
+        width: 38%;
         align-self: flex-end;
         margin: 0;
     }
@@ -392,6 +393,10 @@ ul {
         align-items: center;
     }
 
+    .second__section-title {
+        align-self: flex-start;
+    }
+
     .second__section--img {
         max-width: 100%;
         height: 250px;
@@ -407,10 +412,90 @@ ul {
         margin-top: 0;
     }
 
-
-
     .third__section--right {
         width: 100%;
         max-width: 600px;
     }
+}
+
+@media (min-width: 1000px) {
+    .hero__left {
+        width: 40%;
+    }
+
+    .hero__right {
+        width: 55%;
+    }
+    /* ls - means 'large screen' */
+    .ls__flex-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .ls__flex-col {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .first__section--card {
+        margin: 0;
+        width: 100%;
+        max-width: 370px;
+    }
+
+    .first__section--card + .first__section--card {
+        margin-top: 0;
+        margin-left: 2em;
+    }
+
+    .second__section--left {
+        width: 62%;
+    }
+
+    .sidebar {
+        align-self: flex-start;
+        padding-top: 0;
+        width: 30%;
+    }
+    
+    .sidebar__card {
+        margin: 0;
+        width: 100%;
+        max-width: 400px;
+        padding: 2em;
+        text-align: center;
+        color: var(--white);
+        background-color: var(--primary-color);
+    }
+    
+    .sidebar__card + .sidebar__card {
+        margin-top: 1.5em;
+    }
+    
+    .sidebar__title {
+        line-height: 1;
+        margin-bottom: .5em;
+        font-size: var(--large-font);
+    }
+    
+    .sidebar__content {
+        margin: 0;
+        font-size: var(--small-font);
+    }
+
+    .second__section--img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: fill;
+        margin: 2.5em 0 1.5em 0;
+    }
+
+    .third__section--left {
+        width: 100%;
+        max-width: 400px;
+        margin-right: 2em;
+    }
+
 }
